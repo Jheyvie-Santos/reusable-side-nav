@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Javascript cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Reusable Sidenav</title>
+</head>
+<body>
+    <nav>
+        <div class="profile">
+            <!-- Profile picture -->
+            <img src="#" alt="profile-picture" title="Picture">
+            <!-- Username -->
+            <h3>Hello, User!</h3>
+        </div>
+
+        <div class="navigations">
+            <ul>
+                <!-- Nav Items -->
+                <li id="dashboard">
+                    <i class="fas fa-tachometer-alt"></i> 
+                    Dashboard
+                </li>
+                <li id="movies">
+                    <i class="fas fa-film"></i> 
+                    Movies
+                </li>
+                <li id="file_manager">
+                    <i class="fas fa-folder"></i> 
+                    File Manager
+                </li>
+                <li id="user">
+                    <i class="fas fa-user"></i> 
+                    User
+                </li>
+                <li id="comments">
+                    <i class="fas fa-comments"></i> 
+                    Comments
+                </li>
+                <li id="reviews">
+                    <i class="fas fa-star"></i> 
+                    Reviews
+                </li>
+            </ul>  
+            <!-- Log out button -->
+            <button><i class="fas fa-sign-out-alt"></i>Logout</button>
+        </div>
+    </nav>
+    <!-- Page loading -->
+    <div class="content">
+        Content Here...
+    </div>
+
+    <!-- Javascript -->
+    <script src="app.js" defer></script>
+</body>
+</html>
