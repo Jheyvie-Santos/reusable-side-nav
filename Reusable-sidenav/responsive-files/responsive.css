@@ -1,0 +1,37 @@
+:root{
+    --nav-color: black;
+    --nav-font-color: #fff;
+}
+
+/* For phone */
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+    body{
+        position: relative;
+    }
+
+    nav{
+        display: none;
+        width: 75% !important;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: var(--nav-color) !important;
+        color: var(--nav-font-color) !important;
+        animation: slideRight .8s forwards;
+    }
+
+    .content{
+        width: 100% !important;
+        min-height: 100% !important;
+        height: max-content !important;
+    }
+}
+
+/* Back to Desktop */
+@media screen and (min-width: 481px) {
+    nav {
+      display: flex !important;
+    }
+  }

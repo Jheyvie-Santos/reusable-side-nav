@@ -1,3 +1,5 @@
+import './responsive-files/responsive.js';
+
 $(document).ready(function() {
     // Function to load content based on pageId
     function loadContent(pageId) {
